@@ -6,13 +6,16 @@ This script should be installed as
 
 /etc/letsencrypt/renewal-hooks/deploy/certbot-macosserver-deploy.sh
 
-on macOS Server. If you now run (as root)
+on macOS Server. Permissions should be set to 755.
+
+If you now run (as root)
 
 certbot renew
 
-(or on any install of a new cert), this script will run. It will correctly
-install the new cert in Server Admin and the System Keychain. It will rmeove
-the previous cert if it is no longer in use by Server Admin.
+(or on any install of a new cert), this script will automatically run if a new
+certificate has been installed. It will correctly install the new cert in 
+Server Admin and the System Keychain. It will remove the previous cert if it
+is no longer in use by Server Admin.
 
 If you have the following in your root crontab:
 
