@@ -26,3 +26,5 @@ attempt to renew), it will run once a day, and when a certificate has been
 renewed, it will installed.
 
 See the script itself for more documentation.
+
+BSD style license and no warranty whatsoever. See script.
